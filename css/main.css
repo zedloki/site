@@ -213,10 +213,10 @@ header::before {
   -webkit-transition: visibility 0s 0.3s;
   -moz-transition: visibility 0s 0.3s;
   transition: visibility 0s 0.3s;
-  /*Nav Bar Shadow*/
-  -webkit-box-shadow: 0 12px 8px -8px #999;
-  -moz-box-shadow: 0 12px 8px -8px #999;
-  box-shadow: 0 12px 8px -8px #999;
+  /*******************************Nav Bar Shadow******************************************/
+  -webkit-box-shadow: 0 16px 12px -12px #999;
+  -moz-box-shadow: 0 16px 12px -12px #999;
+  box-shadow: 0 16px 12px -12px #999;
 }
 .cd-main-nav a {
   display: block;
@@ -399,7 +399,8 @@ header::before {
   }
   .cd-main-nav li ul {
     height: 80px;
-    background-color: #DAA520;
+      /***********************************Secondary Nav Bar color*********************************/
+    background-color: #DCDCDC;
     /* padding left = logo size + logo left position*/
     padding: 0 5% 0 calc(5% + 124px);
     -webkit-transform: translateY(-80px);
@@ -492,7 +493,8 @@ header::before {
 
 /************************************************Front Image******************************************************/
 .cd-main-content {
-  position: relative;
+  position: absolute;
+  width:100%;
   z-index: 2;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -523,25 +525,25 @@ header::before {
 
 /*--------------------------------------------------------- Headline------------------------------------------------------------------ */
 .cd-intro {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
-  margin-top:2%;
+  margin-top:5%;
   left:50%; 
   margin-bottom:2%;
 }
 
 .cd-intro span {
   text-align: center;
-  color: #aebcb9;
-  font-weight:bold;
+  color: #FFFFFF;
   visibility: visible;
+  font-weight:bold;
   font-family:sans-serif;
   font-size: 1.5rem;
   line-height: 2.0;
 }
 
 .cd-headline {
-  color: #aebcb9;
+
   visibility: visible;
   font-family:sans-serif;
   font-size: 1.0rem;
@@ -556,6 +558,9 @@ header::before {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .cd-intro{
+    margin-top:15%;
+  }
   .cd-headline {
     visibility: visible;
     font-family:sans-serif;
@@ -563,11 +568,14 @@ header::before {
   }
   .cd-intro span {
     text-align: center;
-    color: #aebcb9;
+    
     visibility: visible;
     font-family:sans-serif;
     font-size: 1.5rem;
     line-height: 2.0;
+  }
+  .title{
+    font-size:3.0rem;
   }
 }
 
@@ -592,7 +600,6 @@ header::before {
 .no-js .cd-words-wrapper b.is-visible {
   opacity: 1;
 }
-
 
 
 .cd-headline.scale b {
@@ -727,16 +734,79 @@ header::before {
   }
 }
 /* ---------------Body----------------- */
-body {
-  color :#FFFFFF;
+
+
+/**********************************Page Scroll*******************************************/
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+  height: 100%; 
 }
 
-.background {
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+  position: fixed;
+  z-index: 9999;
+  right: 100px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
   display: block;
-  margin: auto;
-  position:absolute;
-  width:100%;
-  background-repeat:no-repeat;
+  position: relative;
+  color: transparent;
+  height: 50px;
 }
 
-/***************Page Scroll**********************/
+.cbp-fbscroller > nav a:after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 4px solid #800000;
+}
+
+.cbp-fbscroller > nav a:hover:after {
+  background: rgba(128,0,0,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent:after {
+  background: #800000;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*****************************Page Image Location*********************************/
+#fbsection1 {
+  background-image: url(../img/ITC.jpg);
+}
+/*
+#fbsection2 {
+  background-image: url(../images/2.jpg);
+}
+/*
+#fbsection3 {
+  background-image: url(../images/3.jpg);
+}
+
+#fbsection4 {
+  background-image: url(../images/4.jpg);
+}
+
+#fbsection5 {
+  background-image: url(../images/5.jpg);
+}*/

@@ -24,7 +24,7 @@
 </head>
 <body>
   <!--Navigation Bar-->
-  <img class="background img-responsive center-block" src="img/itc.jpg" alt="">
+  
   <header>
     <div class="cd-logo"><b><a style="color:#800000;" href="index.html">Theta Tau</a> | <a style="color:green;" href="http://www.binghamton.edu/watson/">SUNY Binghamton</a></b></div>
     <nav class="cd-main-nav-wrapper">
@@ -52,7 +52,9 @@
   <!--Floating Headline-->
   <div class="cd-main-content">
     <section class="cd-intro">
-      <span>Theta Tau, a Professional Engineering Fraternity<br><bold>Welcome to Nu Gamma Chapter!</bold><br></span>
+     <span><b class="title" style="font-weight:bold;">Welcome to Nu Gamma Chapter!</b><br><br><br></span>
+     <br><br>
+      <span><b style="top:50%;">Power by Theta Tau, a Professional Engineering Fraternity<br></b></span>
       <h1 class="text-center cd-headline letters scale">
         <span>Engineering Leaders for</span> 
         <span class="cd-words-wrapper">
@@ -63,26 +65,31 @@
       </h1>
     </section> 
   </div>
+
+
+    <div id="cbp-fbscroller" class="cbp-fbscroller">
+      <nav>
+        <a href="#fbsection1" class="cbp-fbcurrent">Intro</a>
+        <a href="#fbsection2">Rush</a>
+        <a href="#fbsection3">Rush</a> 
+      </nav>
+      <section id="fbsection1"></section>
+      <section id="fbsection2">
+              <div class="info">
+                  <b style="font-size:1.5rem;">Nu Gamma</b>
+
+              </div>
+      </section>
+      <section id="fbsection3"></section>
+    </div>
+
  
 </body>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/modernizr.min.js"></script>
         <script src="js/main.js"></script> <!-- Resource jQuery -->
         <script src="js/vendor/glide.min.js"></script>
-        <script src="js/velocity.min.js"></script>
-        <script src="js/velocity.ui.min.js"></script>
 
-        <script type="text/javascript" language="JavaScript">
-        function set_body_height()
-        {
-            var wh = $(window).height();
-            $('body').attr('style', 'height:' + wh + 'px;');
-        }
-        $(document).ready(function() {
-            set_body_height();
-            $(window).bind('resize', function() { set_body_height(); });
-        });
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
