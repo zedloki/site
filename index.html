@@ -101,9 +101,9 @@
                 </div>
           </div> 
       </section>
-      <section id="fbsection3">
-      <!---************************************************Rush Info***************************************************************-->  
-      </section>
+      <!--********************************Rush Banner***************************************-->
+      <section id="fbsection3"></section>
+
       <div class="rush">
         <div class = "container">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -116,21 +116,42 @@
             <p class="rush-meta"><br> Want to know more about us? Please <a href="contact.html"><strong>contact us</strong></a>. <br> More detail coming soon</p>
             <!--**************************************************Rush Slider***************************************************-->
           </div>
+          <hr>
         </div>
       </div>
+       <a href="#0"><img class="foot-icon" src="img/established.png"></a>
+       <footer>
+          <section >
+
+          </section>
+          <br><br>
+          <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="font-weight:bold;"><a href="donation.html">DONATE</a></button>
+          <hr>
+          <span class="copyright" style="padding-bottom:1%;">&copy; &Theta;&Tau; at Binghamton University  | All Rights Reserved |  Site design by Zed Yang</span>  
+       </footer>
     </div>
-    <footer>
-
-
-    </footer>
- 
 </body>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/modernizr.min.js"></script>
         <script src="js/main.js"></script> <!-- Resource jQuery -->
         <script src="js/vendor/glide.min.js"></script>
-
-
+        <!--Smooth Scroll-->
+        <script>
+            $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 100);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
