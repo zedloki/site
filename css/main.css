@@ -733,8 +733,119 @@ header::before {
     opacity: 0;
   }
 }
-/* ---------------Body----------------- */
+/****************************************************Body Text*********************************************/
+  .post-preview{
+      font-family:'Sans PT',sans-serif;
+      font-weight:bold;
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+      text-align:center;
+      line-height: 25px;
+  }
+  .post-title{
+      margin-top:15%;
+      color:#800000;
+      font-size:2.0rem;
+      font-weight:bold;
 
+  }
+  .post-subtitle{
+      margin-top:5%;
+      text-align:center;
+
+  }
+  .post-content{
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+  }
+  .post-meta{
+      font-size:12px;
+      margin-top:2%;
+
+  }
+  .post-preview img{
+    margin-top:1%;
+    height:30%;
+  }
+
+
+@media only screen and (max-width: 512px) {
+  .post-preview{
+      font-family:'Sans PT',sans-serif;
+      font-weight:bold;
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+      text-align:center;
+      line-height: 25px;
+
+  }
+  .post-title{
+      margin-top:15%;
+      font-size:2.0rem;
+      font-weight:bold;
+
+  }
+  .post-subtitle{
+      margin-top:5%;
+      text-align:center;
+
+  }
+  .post-content{
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+  }
+  .post-meta{
+      font-size:12px;
+      margin-top:2%;
+
+  }
+  .post-preview img{
+    margin-top:1%;
+    height:10%;
+    width:10%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .post-preview{
+      font-family:'Sans PT',sans-serif;
+      font-weight:bold;
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+      text-align:center;
+      line-height: 25px;
+
+  }
+  .post-title{
+      margin-top:15%;
+      font-size:2.0rem;
+      font-weight:bold;
+
+  }
+  .post-subtitle{
+      margin-top:5%;
+      text-align:center;
+
+  }
+  .post-content{
+      letter-spacing: 1px;
+      font-size:12px;
+      margin-top:5%;
+  }
+  .post-meta{
+      font-size:12px;
+      margin-top:2%;
+
+  }
+  .post-preview img{
+    margin-top:1%;
+    height:30%;
+  }
+}
 
 /**********************************Page Scroll*******************************************/
 /* Set all parents to full height */
@@ -750,7 +861,7 @@ html, body,
 .cbp-fbscroller > nav {
   position: fixed;
   z-index: 9999;
-  right: 100px;
+  right: 50px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -790,6 +901,8 @@ html, body,
   background-size: cover;
   background-attachment: fixed;
 }
+
+
 /*****************************Page Image Location*********************************/
 #fbsection1 {
   background-image: url(../img/ITC.jpg);
@@ -798,11 +911,12 @@ html, body,
 #fbsection2 {
   background-image: url(../images/2.jpg);
 }
-/*
+*/
 #fbsection3 {
-  background-image: url(../images/3.jpg);
+  background-image: url(../img/banner.jpg);
+  height:40%;
 }
-
+/*
 #fbsection4 {
   background-image: url(../images/4.jpg);
 }
@@ -810,3 +924,46 @@ html, body,
 #fbsection5 {
   background-image: url(../images/5.jpg);
 }*/
+@media only screen and (max-width: 512px) {
+  .cbp-fbscroller nav{
+      visibility: hidden;
+  }
+}
+
+/******************************************************Rush****************************************************/
+.rush{
+  background-color:#ffffff;
+  padding-top:5%;
+  font-family:'Sans PT',sans-serif;
+  font-weight:bold;
+  letter-spacing: 1px;
+  font-size:12px;
+  text-align:center;
+  line-height: 25px;
+  height:60%;
+}
+.rush-title{
+  color:#800000;
+  margin-top:0%; 
+  font-size:2.0rem;
+  line-height: 25px;
+  text-align:center;
+}
+.rush-content{
+  margin-top:5%;
+
+}
+.rush-meta{
+  margin-top:5%;
+  font-size:1.0rem;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 512px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+}
+
+/****************************************************Footer******************************************************/

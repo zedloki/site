@@ -201,6 +201,7 @@ jQuery(document).ready(function($){
 	}
 });
 
+//**************************************************************************Fixed Scroll************************************************************************************************
 var cbpFixedScrollLayout = (function() {
 
 	// cache and initialize some values
@@ -214,7 +215,7 @@ var cbpFixedScrollLayout = (function() {
 		// the body element
 		$body : $( 'html, body' ),
 		// the body animation speed
-		animspeed : 650,
+		animspeed : 100,
 		// the body animation easing (jquery easing)
 		animeasing : 'easeInOutExpo'
 	};
