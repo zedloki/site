@@ -31,9 +31,7 @@ a:hover{
 }
 
 /* -------------------------------- 
-
-Main Components 
-
+  Landing Page
 -------------------------------- */
 header {
   position: fixed;
@@ -1057,10 +1055,6 @@ button{
   font-weight:bold;
 
 }
-.social-media{
-
-}
-
 
 @media only screen and (max-width: 512px) {
 
@@ -1070,3 +1064,21 @@ button{
 
 }
 
+/* -------------------------------- 
+  About Us
+-------------------------------- */
+.content{
+  background-color:#ffffff;
+  padding-top:5%;
+  font-family:'Sans PT',sans-serif;
+  font-weight:bold;
+  letter-spacing: 1px;
+  font-size:12px;
+  text-align:center;
+  line-height: 25px;
+  height:60%;
+  -webkit-box-shadow: 0 12px 12px -16px #999;
+  -moz-box-shadow: 0 12px 12px -16px #999;
+  box-shadow: 0 12px 12px -16px #999;
+
+}
