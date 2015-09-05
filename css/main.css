@@ -767,6 +767,7 @@ header::before {
 
   }
   .post-preview img{
+ 
     margin-top:1%;
     height:30%;
   }
@@ -805,6 +806,7 @@ header::before {
 
   }
   .post-preview img{
+    visibility:hidden;
     margin-top:1%;
     height:10%;
     width:10%;
@@ -941,7 +943,7 @@ html, body,
   font-size:12px;
   text-align:center;
   line-height: 25px;
-  height:60%;
+  height:auto;
     -webkit-box-shadow: 0 12px 12px -16px #999;
   -moz-box-shadow: 0 12px 12px -16px #999;
   box-shadow: 0 12px 12px -16px #999;
@@ -973,7 +975,7 @@ html, body,
     font-size:12px;
     text-align:center;
     line-height: 25px;
-    height:60%;
+    height:auto;
       -webkit-box-shadow: 0 12px 12px -16px #999;
     -moz-box-shadow: 0 12px 12px -16px #999;
     box-shadow: 0 12px 12px -16px #999;
@@ -1005,7 +1007,7 @@ html, body,
   font-size:12px;
   text-align:center;
   line-height: 25px;
-  height:60%;
+  height:auto;
   -webkit-box-shadow: 0 12px 12px -16px #999;
   -moz-box-shadow: 0 12px 12px -16px #999;
   box-shadow: 0 12px 12px -16px #999;
@@ -1026,6 +1028,14 @@ html, body,
   font-size:1.0rem;
   line-height: 25px;
 }
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top:2%;
+    margin-bottom:2%;
 }
 
 /****************************************************Footer******************************************************/

@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Zed Yang">
   <meta name="description" content="Theta Tau | Nu Gamma">
+
+
   <!--
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   -->
@@ -21,7 +23,10 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    
+  <link rel="stylesheet" href="css/owl/owl.carousel.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/owl/owl.theme.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/owl/owl.transition.css"> <!-- CSS reset -->  
+   
   <title>Theta Tau | Binghamton University</title>
   <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 </head>
@@ -29,12 +34,12 @@
   <!--Navigation Bar-->
   
   <header>
-    <div class="cd-logo"><b><a style="color:#800000;" href="index.html">Theta Tau</a> | <a style="color:green;" href="http://www.binghamton.edu/watson/">SUNY Binghamton</a></b></div>
+    <div class="cd-logo"><b><a style="color:#800000;" href="index.html">Theta Tau</a> | <a style="color:green;" href="http://www.binghamton.edu/watson/" target="_blank">SUNY Binghamton</a></b></div>
     <nav class="cd-main-nav-wrapper">
       <ul class="cd-main-nav">
         <li><a href="about.html">About Us</a></li>
-        <li><a href="#0">Contact</a></li>
-        <li><a href="#0">Donations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donation.html">Donations</a></li>
         <li>
           <a href="#0" class="cd-subnav-trigger"><span>Our Values</span></a>
           <ul>
@@ -55,12 +60,12 @@
   <!--Floating Headline-->
   <div class="cd-main-content">
     <section class="cd-intro">
-     <span><b class="title" style="font-weight:bold;">Welcome to Nu Gamma Chapter!</b><br><br><br></span>
+     <span><b class="title" style="font-weight:bold;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Welcome to Nu Gamma Chapter!</b><br><br><br></span>
      <br><br>
-      <span><b style="top:50%;">Power by Theta Tau, a Professional Engineering Fraternity<br></b></span>
+      <span><b style="top:50%;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Power by Theta Tau, a Professional Engineering Fraternity<br></b></span>
       <h1 class="text-center cd-headline letters scale">
-        <span>Engineering Leaders for</span> 
-        <span class="cd-words-wrapper">
+        <span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Engineering Leaders for</span> 
+        <span class="cd-words-wrapper" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
           <b class="is-visible">Profession</b>
           <b>Service</b>
           <b>Brotherhood</b>
@@ -113,10 +118,19 @@
             <h3 class="rush-content">
                 If you’re interested in being a part of the Nu Gamma of Theta Tau and experience the power of brotherhood, please come to our rush events in September for the Fall 2015 semester! All of our events are free of charge. They are designed to be fun and memorable. We encourage you to meet with our brothers and we will gladly introduce you to our fraternity. 
             </h3>
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+             
+              <div class="item"><img src="img/itc.jpg" alt="The Last of us"></div>
+              <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+              <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+             
+            </div>
+
             <p class="rush-meta"><br> Want to know more about us? Please <a href="contact.html"><strong>contact us</strong></a>. <br> More detail coming soon</p>
             <!--**************************************************Rush Slider***************************************************-->
             <hr><br>
-            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="font-weight:bold;"><a href="donation.html">DONATE</a></button><br><br>
+            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="font-weight:bold; margin-bottom:10%;"><a href="donation.html">DONATE</a></button><br><br>
           </div>
           <hr>
 
@@ -135,11 +149,12 @@
           <br>
           <b class="copyright" style="font-size:1.0rem;">"Whatsoever thy hand findeth to do, do it with thy might;..." --Ecclesiastes 9:10</b> 
           <br><br>
-          <span class="copyright" style="padding-bottom:1%;">&copy; &Theta;&Tau; at Binghamton University  | All Rights Reserved |  Site design by Zed Yang</span>  
+          <span class="copyright" style="padding-bottom:1%;">&copy; &Theta;&Tau; at Binghamton University  | All Rights Reserved</span>  
        </footer>
     </div>
 </body>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/owl.carousel.min.js"></script>
         <script src="js/vendor/modernizr.min.js"></script>
         <script src="js/main.js"></script> <!-- Resource jQuery -->
         <script src="js/vendor/glide.min.js"></script>
@@ -159,6 +174,27 @@
               }
             });
           });
+
+            $(document).ready(function() {
+             
+              $("#owl-demo").owlCarousel({
+             
+                  navigation : false, // Show next and prev buttons
+                  slideSpeed : 100,
+                  paginationSpeed : 400,
+                  singleItem:true
+             
+                  // "singleItem:true" is a shortcut for:
+                  // items : 1, 
+                  // itemsDesktop : false,
+                  // itemsDesktopSmall : false,
+                  // itemsTablet: false,
+                  // itemsMobile : false
+             
+              });
+             
+            });
+
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>

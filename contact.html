@@ -25,6 +25,10 @@
   <title>Theta Tau | Binghamton University</title>
   <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 </head>
+<style>
+.rushform { width:100%;}
+.rushform td{ padding:5px;}
+</style>
 <body>
   <!--Navigation Bar-->
   
@@ -33,7 +37,7 @@
     <nav class="cd-main-nav-wrapper">
       <ul class="cd-main-nav">
         <li><a href="about.html">About Us</a></li>
-        <li><a href="#0">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="#0">Donations</a></li>
         <li>
           <a href="#0" class="cd-subnav-trigger"><span>Our Values</span></a>
@@ -58,30 +62,47 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview" style="padding-top:3%;">
+                <div class="post-preview" style="padding-bottom:5%; position:related;">
                         <h2 class="post-title">
-                            About Theta Tau
+                            Contact Us
                             <hr style="height:1px;border:none;color:#333;background-color:#333;">
                         </h2>
-                        <h3 class="post-content">
-                            <img style="float:right; padding-left:2%;" src="img/FoundersSmall.jpg"/>
-                            Theta Tau is the oldest, largest, and foremost Fraternity for Engineers. Since its founding at the University of Minnesota in 1904, over 35,000 have been initiated over the years. With emphasis on quality and a strong fraternal bond, the Fraternity has chapters only at ABET accredited schools and limits the number of student members in any one of its chapters across the nation. 
-                            <br>
-                            For more information <a href="http://thetatau.org/" target="_blank">Click Here</a>.
-                        </h3>
-                        <hr>
                         <h2 class="rush-title" style="font-size:1.2rem;">
-                            Our Goals
+                            Rush Week
                         </h2>
                         <h3 class="rush-content" style="text-align:left;">
-                            <span style="color:#800000;">For our Brotherhood</span>
+                            <span style="color:#800000;">What is rush?</span>
                             <br>
-                            We forge lifelong bonds of fraternal friendship, a journey that develops and delivers a network of lasting personal and professional relationships. We foster an inviting, safe, and social environment in which our members become lifelong friends.
+                            During Rush week our chapter hosts events open to any watson students interested in joining our fraternity. The purpose of the events is to allow interested students and brothers to meet each other and helps the fraternity to decide who we think would be a good fit in the fraternity. All rush events are free and do not require any commitment to join, although pledging requires that you rush. - Somone else should write this.
                             <br><br>  
-                            <span style="color:#800000;">For our Profession</span>
+                            <span style="color:#800000;">Interested in rushing?</span>
                             <br>
-                            We develop and nurture engineers with strong communication, problem-solving, collaboration, and leadership skills that we demonstrate in our profession, our community, and in our lives.
-                            <br><br>
+                            If you are interested in Theta Tau you are highly encouraged to attend rush week events! A list of events will be posted early on in the semester. You can also fill out the form below and we will contact you when the Rush schedule is finished.
+                            
+                            <br>
+                            <form action="mailto:thetataubing@gmail.edu" id="rushform" method="Post">
+                            <table class="rushform">
+                            <tr><td>Name:</td><td> <input type="text"></td></tr>
+                            <tr><td>Email:</td><td> <input type="text"></td></tr>
+                            <tr><td>Year:</td><td> <select name="year" form="rushform">
+                                    <option value="NaN">Please choose your year</option>
+                                    <option value="Freshman">Freshman</option>
+                                    <option value="Sophomore">Sophomore</option>
+                                    <option value="Junior">Junior</option>
+                                    <option value="Senior">Senior</option>
+                                  </select></td></tr>
+                            <tr><td>Major:</td><td> <select name="major" form="rushform">
+                                    <option value="NaN">Please choose your major</option>
+                                    <option value="BME">Biomedical Engineering</option>
+                                    <option value="CE">Computer Engineering</option>
+                                    <option value="CS">Computer Science</option>
+                                    <option value="EE">Electrical Engineering</option>
+                                    <option value="ISE">Industrial (Fake) Engineering</option>
+                                    <option value="ME">Mechanical Engineering</option>
+                                  </select></td></tr></table>
+                                  <input type="Submit" value="Submit"></form><br>
+                            
+                            <br>
                             <span style="color:#800000;">For our Communities</span>
                             <br>
                             We are known for our service to our college, university and the larger community. Our service projects create a unifying environment for learning and personal growth for our members.
@@ -95,7 +116,7 @@
 
       <!--*********************************Footer*********************************************-->
        <a href="#0"><img class="foot-icon" src="img/established.png"></a>
-       <footer>
+       <footer style="position:related;">
           <section class="social-media">
               <a href="https://www.facebook.com/ThetaTauBing" target="_blank"><img onmouseover="this.src='img/social/facebook1.png'" onmouseout="this.src='img/social/facebook.png'" src="img/social/facebook.png" alt=" "></a>
               <a href=" " target="_blank"><img onmouseover="this.src='img/social/twitter1.png'" onmouseout="this.src='img/social/twitter.png'" src="img/social/twitter.png" alt=" "></a>
