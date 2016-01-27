@@ -43,27 +43,29 @@ Header
 -------------------------------- */
 header {
 /*  text-align: center;*/
-  top:10%;
-  left:41%;
-  position: fixed;
-  z-index: 10000;
+  /*position: absolute;*/
+  
 }
 header img{
-  height:30%;
-  width:30%;
+  top:5%;
+  left:33%;
+  height:18%;
+  width:34%;
+  position:absolute;
+  z-index: 1000;
 }
 
 @media only screen and (min-width: 1300px) {
   header {
 /*  text-align: center;*/
-  top:10%;
-  left:39.8%;
-  position: fixed;
-  z-index: 10000;
+  /*position:absolute;*/
+  z-index: 1000;
 }
   header img{
-    height:50%;
-    width:50%;
+    height:18%;
+    width:25%;
+    top:5%;
+    left:37.5%;
   }
 
 }
@@ -71,13 +73,13 @@ header img{
 @media only screen and (max-width: 600px) {
   header {
   /*  text-align: center;*/
-    top:10%;
-    left:33.5%;
-    position: fixed;
+    /*position: absolute;*/
     z-index: 10000;
   }
   header img{
-    height:60%;
+    top:5%;
+    left:20%;
+    height:18%;
     width:60%;
   }
 
@@ -434,6 +436,7 @@ folding panel
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
 }
 .cd-folding-panel .cd-close::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
@@ -444,6 +447,7 @@ folding panel
 }
 .cd-folding-panel.is-open {
   visibility: visible;
+  
   -webkit-transition: visibility 0s 0s;
   -moz-transition: visibility 0s 0s;
   transition: visibility 0s 0s;
@@ -462,8 +466,14 @@ folding panel
 .cd-folding-panel.is-open .fold-right::after {
   background-color: #f9fafa;
 }
+
+.cd-folding-panel.is-open header img{
+  position:relative;
+
+}
 .cd-folding-panel.is-open .cd-close {
   opacity: 1;
+
   -webkit-transition: opacity 0.2s 0.5s;
   -moz-transition: opacity 0.2s 0.5s;
   transition: opacity 0.2s 0.5s;
@@ -549,6 +559,7 @@ folding panel
   -o-transform: translateY(20px);
   transform: translateY(20px);
 }
+
 .cd-fold-content h2 {
   font-size: 2.4rem;
   -webkit-transition: -webkit-transform 0.2s 0.2s, opacity 0.2s 0.2s;
